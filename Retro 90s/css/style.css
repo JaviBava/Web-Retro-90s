@@ -1,0 +1,55 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: #a5a9a0;
+	color: #0827f5;
+	font-family: "Roboto Mono", monospace;
+}
+
+a {
+    color: blue;
+}
+
+h1,
+p {
+	color: black;
+	text-align: left;
+	margin: 15px;
+}
+
+form {
+	width: 50%;
+	margin: 20px auto;
+}
+
+select {
+	width: 50%;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*Main Image*/
+.construction {
+	width: 100%;
+	margin: 50px 0;
+}
+
+/*Counter*/
+
+body {
+	counter-reset: section;
+}
+
+footer {
+	margin-top: 50px;
+}
+
+h2::before {
+	counter-increment: section;
+	content: "Hits: " counter(section);
+	border-style: outset;
+	margin: 10px;
+	padding: 3px;
+}
